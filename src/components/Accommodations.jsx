@@ -20,7 +20,7 @@ const accommodations = [
     image: 'https://images.unsplash.com/photo-1533090368676-1fd25485db88?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Cocoon',
+    title: 'Cocoon',    
     description: 'Nature-immersed pods for the adventurous soul',
     price: '₹20,000/night',
     image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800'
