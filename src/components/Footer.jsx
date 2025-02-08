@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-yellow-400 mb-4">Connect</h3>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918894694612"
               className="inline-flex items-center bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors"
             >
               <MessageCircle className="mr-2" />
