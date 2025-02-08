@@ -5,6 +5,7 @@ const Hero = () => {
   const [checkIn, setCheckIn] = useState('');
   const [checkOut, setCheckOut] = useState('');
   const [guests, setGuests] = useState('2');
+  const [stay, setStay] = useState('ashape');
 
   return (
     <div id="home" className="relative h-screen">
@@ -25,14 +26,14 @@ const Hero = () => {
         
         {/* Booking Form */}
         <div className="bg-black bg-opacity-80 p-6 rounded-lg max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div>
               <label className="block text-sm mb-2">Check In</label>
               <div className="relative">
                 <Calendar className="absolute left-3 top-3 h-5 w-5 text-yellow-400" />
                 <input
                   type="date"
-                  className="w-full bg-white bg-opacity-10 rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
+                  className="w-full bg-black text-white rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
                   value={checkIn}
                   onChange={(e) => setCheckIn(e.target.value)}
                 />
@@ -44,7 +45,7 @@ const Hero = () => {
                 <Calendar className="absolute left-3 top-3 h-5 w-5 text-yellow-400" />
                 <input
                   type="date"
-                  className="w-full bg-white bg-opacity-10 rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
+                  className="w-full bg-black text-white rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
                   value={checkOut}
                   onChange={(e) => setCheckOut(e.target.value)}
                 />
@@ -55,13 +56,26 @@ const Hero = () => {
               <div className="relative">
                 <Users className="absolute left-3 top-3 h-5 w-5 text-yellow-400" />
                 <select
-                  className="w-full bg-white bg-opacity-10 rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
+                  className="w-full bg-black text-white rounded-md py-2 px-10 focus:ring-2 focus:ring-yellow-400"
                   value={guests}
                   onChange={(e) => setGuests(e.target.value)}
                 >
                   {[1,2,3,4,5,6].map(num => (
                     <option key={num} value={num}>{num} Guest{num !== 1 ? 's' : ''}</option>
                   ))}
+                </select>
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm mb-2">Stay</label>
+              <div className="relative">
+                <select
+                  className="w-full bg-black text-white rounded-md py-2 px-4 focus:ring-2 focus:ring-yellow-400"
+                  value={stay}
+                  onChange={(e) => setStay(e.target.value)}
+                >
+                  <option value="ashape">A-Shape Cottage</option>
+                  <option value="premium">Premium Cottage</option>
                 </select>
               </div>
             </div>

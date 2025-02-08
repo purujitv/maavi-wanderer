@@ -16,12 +16,13 @@ const Contact = () => {
                 <p>Chail, Himachal Pradesh, India</p>
               </div>
               <div className="flex items-center">
-                <Phone className="text-yellow-400 mr-4" />
-                <p>+91 98765 43210</p>
+                <Phone className="text-yellow-400 mr-4 " />
+                <p>+91 8219087372 <br/> +91 8894694612</p>
+                
               </div>
               <div className="flex items-center">
                 <Mail className="text-yellow-400 mr-4" />
-                <p>info@maaviwanderer.com</p>
+                <p>hello@maaviwanderer.com</p>
               </div>
             </div>
             <div className="flex space-x-4">
