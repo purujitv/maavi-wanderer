@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Clock, Compass, Mail, MapPin } from 'lucide-react'
 export default function UnderMatience() {
   return (
     <div className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center p-4"
@@ -29,13 +29,14 @@ export default function UnderMatience() {
      <div className="bg-white/5 p-6 rounded-lg border border-white/10 hover:bg-white/10 transition-all">
        <Mail className="w-6 h-6 text-yellow-400 mb-3" />
        <h3 className="font-semibold mb-2">Contact Us</h3>
-       <p className="text-gray-300">support@maaviwanderer.com</p>
+       <p className="text-gray-300">hello@maaviwanderer.com</p>
      </div>
      
      <div className="bg-white/5 p-6 rounded-lg border border-white/10 hover:bg-white/10 transition-all">
        <MapPin className="w-6 h-6 text-yellow-400 mb-3" />
-       <h3 className="font-semibold mb-2">Office Location</h3>
-       <p className="text-gray-300">123 Travel Street, Adventure City</p>
+       <h3 className="font-semibold mb-2">Location</h3>
+       <p className="text-gray-300">Maavi wanderer, Janedghat, Himachal Pradesh 173217, India
+       </p>
      </div>
    </div>
 
