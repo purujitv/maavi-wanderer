@@ -34,7 +34,7 @@ const Accommodations = () => {
         <h2 className="text-4xl font-bold mb-12 text-center">
           <span className="text-yellow-400">Luxury</span> Stays
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
           {accommodations.map((accommodation, index) => (
             <div key={index} className="group relative overflow-hidden rounded-lg">
               <img 

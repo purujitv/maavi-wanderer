@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 container mx-auto px-4">
+    <section id="about" className="py-20 container mx-auto px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="grid grid-cols-2 gap-4">
           <img 

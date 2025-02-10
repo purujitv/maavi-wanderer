@@ -11,7 +11,7 @@ const Expeditions = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       </div>
-      <div className="relative container mx-auto px-4">
+      <div className="relative container mx-auto px-8">
         <h2 className="text-4xl font-bold mb-12 text-center">
           <span className="text-yellow-400">4x4</span> Expeditions
         </h2>

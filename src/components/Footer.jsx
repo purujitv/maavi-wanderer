@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="py-8 border-t border-gray-800">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="font-bold text-yellow-400 mb-4">Quick Links</h3>

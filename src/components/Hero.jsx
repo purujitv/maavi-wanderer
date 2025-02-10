@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
       
-      <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
+      <div className="relative container mx-auto px-4 h-full flex flex-col justify-center px-8">
         <h1 className="text-6xl font-bold mb-6">
           <span className="text-yellow-400">Luxury</span> Meets Adventure
         </h1>
@@ -52,6 +52,19 @@ const Hero = () => {
               </div>
             </div>
             <div>
+              <label className="block text-sm mb-2">Stay</label>
+              <div className="relative">
+                <select
+                  className="w-full bg-black text-white rounded-md py-2 px-4 focus:ring-2 focus:ring-yellow-400"
+                  value={stay}
+                  onChange={(e) => setStay(e.target.value)}
+                >
+                  <option value="ashape">A-Shape Cottage</option>
+                  <option value="premium">Premium Cottage</option>
+                </select>
+              </div>
+            </div>
+            <div>
               <label className="block text-sm mb-2">Guests</label>
               <div className="relative">
                 <Users className="absolute left-3 top-3 h-5 w-5 text-yellow-400" />
@@ -66,19 +79,7 @@ const Hero = () => {
                 </select>
               </div>
             </div>
-            <div>
-              <label className="block text-sm mb-2">Stay</label>
-              <div className="relative">
-                <select
-                  className="w-full bg-black text-white rounded-md py-2 px-4 focus:ring-2 focus:ring-yellow-400"
-                  value={stay}
-                  onChange={(e) => setStay(e.target.value)}
-                >
-                  <option value="ashape">A-Shape Cottage</option>
-                  <option value="premium">Premium Cottage</option>
-                </select>
-              </div>
-            </div>
+           
             <button className="bg-yellow-400 text-black py-3 px-6 rounded-md hover:bg-yellow-300 transition-colors font-semibold mt-6 md:mt-0">
               Book Now
             </button>
